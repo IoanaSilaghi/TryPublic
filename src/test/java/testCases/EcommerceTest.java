@@ -31,7 +31,7 @@ public class EcommerceTest {
         BasePage homePage = new BasePage (driver);
         homePage.open();
 
-        ProductPage productPage = homePage.clickProduct();
+        ProductPage productPage = homePage.clickProduct ();
         productPage.addToCart();
 
         CartPage cartPage = new CartPage(driver);

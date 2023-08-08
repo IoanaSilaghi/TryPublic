@@ -30,9 +30,9 @@ public class SearchResultsPageTest {
         BasePage homePage = new BasePage (driver);
         homePage.open();
 
-        String productName = "Laptop"; // Replace with the desired product name
-        SearchResultsPage searchResultsPage = homePage.searchForProduct(productName);
+        String productName = "Ipod"; // Replace with the desired product name
+        SearchResultsPage searchResultsPage = homePage.searchForProduct ("Ipod");
 
-        assertTrue( ((pages.SearchResultsPage) searchResultsPage).isProductDisplayed(productName), "Product is displayed in search results.");
+        assertTrue( ( searchResultsPage).isProductDisplayed(productName), "Product is displayed in search results.");
     }
 }
